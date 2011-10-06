@@ -1,0 +1,14 @@
+Stripe Apex Toolkit
+========================================
+1. The apex wrapper library created by me (Aslam Bari: http://twitter.com/aslambari) with my collegue (Sanjay Mankani: http://twitter.com/SanjayMankani)
+2. This tool is easy to access Stripe APIS (https://stripe.com/) in Salesforce Apex language
+3. It contains main basic methods as which will be helpful for developers to start on this
+4. For more info about this available here
+http://www.aslambari.com/stripe_apex_toolkit.html
+
+Company:
+www.ibirdsservices.com
+
+Authors:
+Aslam Bari
+Sanjay Mankani
