@@ -9,7 +9,7 @@ public class TestStripe{
     
     @isTest
     public static void testStripe(){
-        Stripe str=new Stripe('y001LvDyqiGbNZclWQfgVQ7JixuOJk8w');
+        Stripe str=new Stripe('y001LvDyqiGbNZclaaaxxxxttttOJk8w');
         str.createCharge('4242424242424242','2013','12','123','200','usd','test');
         str.createCharge('cus_wCA0LuIzUzRYZp','200','usd','test');
         str.retrieveCharge('ch_GhUBmjVvkX3Wmd');
@@ -24,7 +24,7 @@ public class TestStripe{
     
     @isTest    
     public static void testStripeCharge(){
-        StripeCharge StrChr=new StripeCharge('y001LvDyqiGbNZclWQfgVQ7JixuOJk8w');
+        StripeCharge StrChr=new StripeCharge('y001LvDyqiGbNZclaaaxxxxttttOJk8w');
         StripeResponseModel StripeResponseModel=new StripeResponseModel();
         StripeResponseModel=strChr.CreateCharge('4242424242424242','2013','12','123','200','usd','description');
         system.assert(StripeResponseModel!=null,'Invalid');
@@ -40,7 +40,7 @@ public class TestStripe{
     
     @isTest
     public static void testStripeCustomer(){
-        StripeCustomer strCust= new StripeCustomer('y001LvDyqiGbNZclWQfgVQ7JixuOJk8w');
+        StripeCustomer strCust= new StripeCustomer('y001LvDyqiGbNZclaaaxxxxttttOJk8w');
         StripeResponseModel StripeResponseModel=new StripeResponseModel();
         StripeResponseModel=strCust.createCustomer('4242424242424242','12','2013','123','sanjay','add1','add2','305001','Rajasthan','India','gamer.sanjay@gmail.com','Test');
         system.assert(StripeResponseModel!=null,'Invalid');
@@ -52,7 +52,7 @@ public class TestStripe{
         
     @isTest
     public static void testStripeInvoice(){
-        StripeInvoice strInv=new StripeInvoice('y001LvDyqiGbNZclWQfgVQ7JixuOJk8w');
+        StripeInvoice strInv=new StripeInvoice('y001LvDyqiGbNZclaaaxxxxttttOJk8w');
         StripeResponseModel StripeResponseModel=new StripeResponseModel();
         StripeResponseModel=strInv.createInvoice('cus_wCA0LuIzUzRYZp','200','usd','Test');
         system.assert(StripeResponseModel!=null,'Invalid');
@@ -64,7 +64,7 @@ public class TestStripe{
     
     @isTest
     public static void testStripePlan(){
-        StripePlan strPlan=new StripePlan('y001LvDyqiGbNZclWQfgVQ7JixuOJk8w');
+        StripePlan strPlan=new StripePlan('y001LvDyqiGbNZclaaaxxxxttttOJk8w');
         StripeResponseModel StripeResponseModel=new StripeResponseModel();
         StripeResponseModel=strPlan.createPlan('gold','200','usd','month','Test Plan');
         system.assert(StripeResponseModel!=null,'Invalid');
